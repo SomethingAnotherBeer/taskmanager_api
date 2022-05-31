@@ -1,0 +1,129 @@
+2022:03:30 10:50:50:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "=")
+LINE 1: SELECT user_id FROM usersWHERE user_login = $1
+                                                  ^
+2022:03:30 10:55:59:SQLSTATE[23502]: Not null violation: 7 ОШИБКА:  значение NULL в столбце "user_rights_id" отношения "users" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (1, null, some111, $2y$10$fGYOq88hbDsRmh444Sv3Ju0NqD.kaIKRwDfzhfgCYSf1jIUBSl7Bu, , John, Smith).
+2022:03:30 10:59:32:SQLSTATE[23502]: Not null violation: 7 ОШИБКА:  значение NULL в столбце "user_rights_id" отношения "users" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (2, null, some111, $2y$10$V5LbnvJNX3uSzP9CDscfbupmblNO4/9wco9aXBkkAvaQncrhd78.S, , John, Smith).
+2022:03:30 11:46:14:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса в конце
+LINE 1: ...sword = $3,user_email = $4,user_name = $5,user_surname = $6,
+                                                                       ^
+2022:03:30 13:31:06:SQLSTATE[42703]: Undefined column: 7 ОШИБКА:  столбец "token_untill" в таблице "tokens" не существует
+LINE 1: INSERT INTO tokens(user_id, token_key, token_untill) VALUES ...
+                                               ^
+2022:03:30 13:31:58:SQLSTATE[42703]: Undefined column: 7 ОШИБКА:  столбец "token_untill" в таблице "tokens" не существует
+LINE 1: INSERT INTO tokens(user_id, token_key, token_untill) VALUES ...
+                                               ^
+2022:03:30 18:02:13:SQLSTATE[HY093]: Invalid parameter number: :
+2022:03:30 19:10:04:SQLSTATE[23505]: Unique violation: 7 ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "users_user_email_key"
+DETAIL:  Ключ "(user_email)=()" уже существует.
+2022:03:30 19:27:20:SQLSTATE[23505]: Unique violation: 7 ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "users_user_email_key"
+DETAIL:  Ключ "(user_email)=(marcus@miller.com)" уже существует.
+2022:03:30 19:28:37:SQLSTATE[23505]: Unique violation: 7 ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "users_user_email_key"
+DETAIL:  Ключ "(user_email)=(marcuss@miller.com)" уже существует.
+2022:03:31 13:17:59:SQLSTATE[23502]: Not null violation: 7 ОШИБКА:  значение NULL в столбце "task_key" отношения "tasks" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (1, 5, 9, 1, null, null, , 1648721879, null, 0, null).
+2022:03:31 15:14:11:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "=")
+LINE 1: SELECT * FROM tasksWHERE task_key = $1 AND formulator_id = $...
+                                          ^
+2022:03:31 15:25:28:SQLSTATE[23514]: Check violation: 7 ОШИБКА:  новая строка в отношении "tasks" нарушает ограничение-проверку "tasks_check"
+DETAIL:  Ошибочная строка содержит (6, 5, 9, 1, ZSj1ont67u7R6qn, first_task, , 1648729528, 0, 0, 0).
+2022:03:31 16:02:42:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: UPDATE tasks SET  WHERE task_id = $1
+                          ^
+2022:03:31 16:10:35:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: UPDATE tasks SET  WHERE task_id = $1
+                          ^
+2022:04:07 17:47:03:SQLSTATE[42703]: Undefined column: 7 ОШИБКА:  столбец "user_login" не существует
+LINE 1: SELECT * FROM user_rights WHERE user_login = $1
+                                        ^
+2022:04:07 19:07:19:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:35:50:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:36:37:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:36:48:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:37:28:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:38:33:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:39:26:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:40:40:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:40:50:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:41:23:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:41:56:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:42:19:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 19:42:32:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1:  WHERE token_id = $1
+         ^
+2022:04:07 19:42:53:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1:  WHERE token_id = $1
+         ^
+2022:04:07 19:43:17:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: WHERE token_id = $1
+        ^
+2022:04:07 20:03:01:SQLSTATE[HY093]: Invalid parameter number: :user_password
+2022:04:07 20:03:42:SQLSTATE[HY093]: Invalid parameter number: :user_password
+2022:04:07 20:03:45:SQLSTATE[HY093]: Invalid parameter number: :user_password
+2022:04:07 20:04:11:SQLSTATE[HY093]: Invalid parameter number: :user_password
+2022:04:07 20:24:30:SQLSTATE[08P01]: <<Unknown error>>: 7 ОШИБКА:  в сообщении Bind передано неверное число параметров (1, а подготовленный оператор "pdo_stmt_00000003" требует 2)
+2022:04:07 20:24:50:SQLSTATE[08P01]: <<Unknown error>>: 7 ОШИБКА:  в сообщении Bind передано неверное число параметров (1, а подготовленный оператор "pdo_stmt_00000003" требует 2)
+2022:04:07 20:49:15:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "user_surname")
+LINE 1: UPDATE users SET user_name = $1, SET user_surname = $2 WHERE...
+                                             ^
+2022:04:08 14:17:28:SQLSTATE[HY093]: Invalid parameter number: ::token_id
+2022:04:08 14:17:43:SQLSTATE[HY093]: Invalid parameter number: ::token_id
+2022:04:08 14:28:13:SQLSTATE[23502]: Not null violation: 7 ОШИБКА:  значение NULL в столбце "task_status_id" отношения "tasks" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (9, 11, 13, null, zYqs0tJq5K5v74bkP1yTiEBeW, first_task, first task_description, 1649417293, 0, 0, 0).
+2022:04:08 14:28:59:SQLSTATE[23502]: Not null violation: 7 ОШИБКА:  значение NULL в столбце "task_status_id" отношения "tasks" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (10, 11, 13, null, B55KkGF1dVfseT868m4Vbic8x, first_task, first task_description, 1649417340, 0, 0, 0).
+2022:04:13 14:17:53:SQLSTATE[HY093]: Invalid parameter number: :executor_id
+2022:04:13 14:25:49:SQLSTATE[HY093]: Invalid parameter number: :executor_id
+2022:04:13 14:26:05:SQLSTATE[HY093]: Invalid parameter number: :executor_id
+2022:04:13 14:26:31:SQLSTATE[HY093]: Invalid parameter number: :executor_id
+2022:04:13 14:26:57:SQLSTATE[HY093]: Invalid parameter number: :executor_id
+2022:04:13 15:02:35:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: ...tuses.task_status_id WHERE tasks.executor_id = $1 WHERE task...
+                                                             ^
+2022:04:13 15:02:47:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: ...tuses.task_status_id WHERE tasks.executor_id = $1 WHERE task...
+                                                             ^
+2022:04:13 15:02:52:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: ...tuses.task_status_id WHERE tasks.executor_id = $1 WHERE task...
+                                                             ^
+2022:04:13 15:03:00:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: ...tuses.task_status_id WHERE tasks.executor_id = $1 WHERE task...
+                                                             ^
+2022:04:13 15:03:40:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: ...tuses.task_status_id WHERE tasks.executor_id = $1 WHERE task...
+                                                             ^
+2022:04:13 15:04:23:SQLSTATE[42601]: Syntax error: 7 ОШИБКА:  ошибка синтаксиса (примерное положение: "WHERE")
+LINE 1: ...tuses.task_status_id WHERE tasks.executor_id = $1 WHERE task...
+                                                             ^
+2022:04:14 15:23:01:SQLSTATE[23503]: Foreign key violation: 7 ОШИБКА:  UPDATE или DELETE в таблице "groups" нарушает ограничение внешнего ключа "users_per_groups_group_id_fkey" таблицы "users_per_groups"
+DETAIL:  На ключ (group_id)=(5) всё ещё есть ссылки в таблице "users_per_groups".
+2022:04:14 15:29:48:SQLSTATE[HY093]: Invalid parameter number: :group_name
+2022:04:14 15:30:49:SQLSTATE[HY093]: Invalid parameter number: :group_name
+2022:04:14 15:31:15:SQLSTATE[HY093]: Invalid parameter number: :group_name
+2022:04:14 15:35:07:SQLSTATE[23503]: Foreign key violation: 7 ОШИБКА:  UPDATE или DELETE в таблице "groups" нарушает ограничение внешнего ключа "users_per_groups_group_id_fkey" таблицы "users_per_groups"
+DETAIL:  На ключ (group_id)=(7) всё ещё есть ссылки в таблице "users_per_groups".
